@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  background-color: #F4F6F5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #E1EDE6;
+  position: sticky;
+  top: 0;
+  height: 100px;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 165px 0 165px;
+  align-items: center;
+  height: 100%;
+}
+
+.main-ico a {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  font-weight: 700;
+  color: #598D66;
+  gap: 8px;
+}
+
+.nav-list {
+  color: #2C2D35;
+  gap: 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+
+
+
+
