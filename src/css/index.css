@@ -242,6 +242,57 @@ article button {
   font-size: 20px;
 }
 
+.coworker-page {
+  display: flex;
+  margin: 140px 165px;
+  gap: 30px;
+}
+
+.image-coworker {
+  margin-top: auto;
+  width: 100%;
+}
+
+.image-coworker {
+  position: relative;
+  display: inline-block;
+}
+
+.image-coworker img:first-child {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-coworker img:last-child {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -65%);
+  z-index: 2;
+}
+
+.we-coworker h2 {
+  font-size: 40px;
+  color: rgba(44, 45, 53, 1);
+  font-weight: 500;
+}
+
+.we-coworker {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.we-coworker p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+
+
+
 
 
 
