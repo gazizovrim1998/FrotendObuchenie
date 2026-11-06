@@ -21,6 +21,7 @@ header {
   position: sticky;
   top: 0;
   height: 100px;
+  z-index: 2;
 }
 
 nav {
@@ -199,7 +200,7 @@ article::before {
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
     rgba(0, 0, 0, 0) 80%
   );
   z-index: 1;
@@ -207,7 +208,7 @@ article::before {
 
 .logo-news {
   display: flex;
-  padding: 70px 165px;
+  padding: 70px 0 0 165px;
   align-items: center;
 }
 
@@ -224,11 +225,21 @@ article::before {
 }
 
 .description-news {
-  display: flex;
-  margin: 0;
-  font-size: 40px;
+  width: 540px;
+  position: relative;
   color: #F4F6F5;
   z-index: 1;
+  margin: 20px 0 0 165px;
+  font-size: 18px;
+}
+
+article button {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 70px 165px;
+  background-color: rgba(238, 219, 109, 1);
+  padding: 21px 60px;
+  font-size: 20px;
 }
 
 
