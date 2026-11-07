@@ -263,8 +263,77 @@ article button:hover {
   display: flex;
   gap: 30px;
   padding: 0;
-
 }
+
+footer {
+  background-color: #E1EDE6;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 165px 0 165px;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.icon-massage {
+  display: flex;
+  gap: 30px;
+}
+
+.icon-massage img {
+  display: block;
+  width: 18px;
+}
+
+.footer-logo img {
+  display: block;
+  width: 100%;
+}
+
+.footer-logo p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  margin-top: 35px;
+  margin-bottom: 8px;
+}
+
+.footer-logo span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(134, 146, 139, 1);
+}
+
+.footer-menu h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  margin-top: 0;
+}
+
+.footer-menu p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(134, 146, 139, 1);
+}
+
+.inc p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  color: rgba(134, 146, 139, 1);
+}
+
+.inc {
+  padding-top: 10px;
+}
+
+
 
 
 
