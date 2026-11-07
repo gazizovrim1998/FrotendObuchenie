@@ -28,7 +28,7 @@ buttons.forEach((button) => {
   });
 });
 
-function galleryRemove(){
+const galleryRemove = () => {
 gallers.forEach((gallery) => {
     gallery.classList.add('display-none')})}
 
