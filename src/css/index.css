@@ -9,6 +9,15 @@ body {
 
 button {
   font-size: 20px;
+  box-shadow: 0 4px 6px rgba(89, 141, 102, 0.3);
+  cursor: pointer;
+   transition: all 0.1s ease;
+}
+
+button:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+  background-color: #3e6b4a;
 }
 
 li {
@@ -26,6 +35,7 @@ header {
   height: 100px;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 nav {
@@ -179,13 +189,14 @@ nav {
 
 }
 
-.painting button:hover {
+button:hover {
   background-color: #376B44;
   color: #F4F6F5;
 }
 
 .promo{
   width: 100%;
+  z-index: 0;
 }
 
 #news {
@@ -331,6 +342,10 @@ footer {
 
 .inc {
   padding-top: 10px;
+}
+
+.display-none {
+  display: none;
 }
 
 
