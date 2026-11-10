@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #F4F6F5;
+  color: #2C2D35;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.primary_btn {
+  font-size: 20px;
+  padding: 20px 60px;
+}
+
+.tab_btn {
+  border-right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.cards {
+  div {
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,115 @@
+@mixin text_btn {
+  &:hover {
+    color: var(--color-green-600);
+  }
+
+  &:focus {
+    border-color: var(--color-green-200);
+    padding-inline: 5px;
+  }
+
+  &:active {
+    color: var(--color-green-800);
+  }
+}
+
+//@mixin cart {
+//  width: 24px;
+//  height: 24px;
+//  background-image: url("/src/image/cart/Frame 217.svg");
+//  background-size: contain;
+//  background-repeat: no-repeat;
+//  background-position: center;
+//  &:hover {
+//    background-image: url("/src/image/cart/status=hover.svg");
+//  }
+//
+//  &:focus {
+//    background-image: url("/src/image/cart/status=focus.svg");
+//  }
+//
+//  &:active {
+//    background-image: url("/src/image/cart/status=active.svg");;
+//  }
+//}     отредактировать
+
+@mixin button-primary {
+  border: 1px solid var(--color-green-600);
+  padding: 20px 60px;
+  gap: 6px;
+  color: var(--color-green-600);
+
+  &:hover {
+    background-color: var(--color-green-800);
+    color: var(--color-green-50);
+    border: none
+  }
+
+  &:focus {
+    background-color: var(--color-green-600);
+    color: var(--color-green-200);
+  }
+
+  &:active {
+    background-color: var(--color-green-800);
+    color: var(--color-white);
+    border: none
+  }
+}
+
+//@mixin view-box-massage {
+//  background-image: url("/src/image/cart/Frame 217.svg");
+//  background-size: contain;
+//  background-repeat: no-repeat;
+//  background-position: center;
+//  &:hover {
+//    background-image: url("/src/image/cart/status=hover.svg");
+//  }
+//
+//  &:focus {
+//    background-image: url("/src/image/cart/status=focus.svg");
+//  }
+//
+//  &:active {
+//    background-image: url("/src/image/cart/status=active.svg");;
+//  }
+//}   отредактировать
+
+@mixin tab-btn {
+  padding: 10px 20px;
+  border-color: var(--color-green-200);
+
+  &:hover {
+    background-color: var(--color-green-600);
+    color: var(--color-green-50);
+  }
+
+  &:focus {
+    background-color: var(--color-green-200);
+    border: 2px solid var(--color-green-600);
+  }
+
+  &:active {
+    background-color: var(--color-green-800);
+    color: var(--color-green-50);
+  }
+}
+
+@mixin promo-button {
+  padding: 20px 60px;
+  gap: 6px;
+  background-color: var(--color-yellow-300);
+
+  &:hover {
+    background-color: var(--color-yellow-100);
+  }
+
+  &:focus {
+    background-color: var(--color-yellow-100);
+    border: 2px solid var(--color-yellow-700);
+  }
+
+  &:active {
+    background-color: var(--color-green-500);
+  }
+}

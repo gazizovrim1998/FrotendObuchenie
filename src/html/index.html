@@ -1,314 +1,387 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport">
-  <title>Верстка</title>
-  <link rel="stylesheet" href="/src/css/index.css">
-</head>
-<body>
-<header>
-  <nav>
-      <a class="main-ico" href="#">
-        <img src="/src/image/logo/Star 1.svg" alt="Лого звезда">
-        <span>Ink. House</span>
-      </a>
-      <ul class="nav-list">
-          <li><a href="#reproduce">Репродукция</a></li>
-          <li><a href="#news">Новинки</a></li>
-          <li><a href="#coworker-page">О нас</a></li>
-          <li>
-            <a href="http://localhost:63342/korzina"><img src="/src/image/logo/Frame%20217.svg" alt="Корзина"></a>
-          </li>
-        </ul>
-  </nav>
-</header>
-<main>
-  <div class="main-page">
-    <div class="main-page-img">
-    <img src="/src/image/hero/bird.png" alt="Птица">
-    </div>
-    <div class="main-page-text">
-      <h1>Реплики картин <br> от <span>Ink. House</span> </h1>
-      <p>Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
-      <button>Продукция</button>
-    </div>
-  </div>
-  <div id="reproduce" >
-    <div class="main-reproduce">
-      <span>Репродукции</span>
-      <div class="reproduce-country">
-        <button class="active country francia">Франция</button>
-        <button class="country germany">Германия</button>
-        <button class="country avstria">Англия</button>
-      </div>
-    </div>
-    <div>
-      <div class="gallery francia">
-        <ul>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/francia/03.jpg" alt="Охота Амура">
-              <p class="author">Марсель Руссо</p>
-              <p class="name_painting">Охота на Амура</p>
-              <p class="printing_house">Холст, масло (50х80)</p>
-              <p class="prices">14 500 руб</p>
-              <button>В корзину</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inc. House</title>
+    <link rel="stylesheet" href="/src/scss/style.css" />
+  </head>
+  <body>
+    <header class="header container">
+        <div>
+          <a class="header__logo" href="#"
+            ><img src="/src/image/logo/Frame%2085.svg" alt="Лого"
+          /></a>
+        </div>
+        <nav>
+          <a href="#reproduce">Репродукция</a>
+          <a href="#news">Новинки</a>
+          <a href="#coworker-page">О нас</a>
+          <a href="http://localhost:63342/korzina"
+            ><img src="/src/image/cart/Frame%20217.svg" alt="Корзина"
+          /></a>
+        </nav>
+      </header>
+      <main>
+        <section class="hero container">
+          <img src="/src/image/hero/bird.png" alt="Птица" />
+          <div class="hero__text">
+            <h1>Реплики картин от Ink. House</h1>
+            <p>
+              Высокое качество отрисовки на плотной бумаге или льняном холсте.
+              Редкие произведения, доступные цены.
+            </p>
+            <button>Продукция</button>
+          </div>
+        </section>
+        <section class="reproduce container" id="reproduce">
+          <div class="reproduce__menu">
             </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/francia/03-1.jpg" alt="Охота Амура">
-              <p class="author">Анри Селин</p>
-              <p class="name_painting">Дама с собачкой</p>
-              <p class="printing_house">Акрил, бумага (50х80)</p>
-              <p class="prices">16 500 руб</p>
-              <button>В корзину</button>
+            <h2>Репродукции</h2>
+            <div class="reproduce__menu__nav">
+              <button class="active country francia">Франция</button>
+              <button class="country germany">Германия</button>
+              <button class="country avstria">Англия</button>
             </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/francia/03-2.jpg" alt="Охота Амура">
-              <p class="author">Франсуа Дюпон</p>
-              <p class="name_painting">Процедура</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">20 000 руб</p>
-              <button>В корзину</button>
+          <div>
+            <div class="gallery francia">
+              <ul>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/francia/03.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Марсель Руссо</p>
+                    <p class="name_painting">Охота на Амура</p>
+                    <p class="printing_house">Холст, масло (50х80)</p>
+                    <p class="prices">14 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/francia/03-1.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Анри Селин</p>
+                    <p class="name_painting">Дама с собачкой</p>
+                    <p class="printing_house">Акрил, бумага (50х80)</p>
+                    <p class="prices">16 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/francia/03-2.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Франсуа Дюпон</p>
+                    <p class="name_painting">Процедура</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">20 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/francia/03-3.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Луи Летуш</p>
+                    <p class="name_painting">Роза</p>
+                    <p class="printing_house">Акрил, бумага (50х80)</p>
+                    <p class="prices">12 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/francia/03-4.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Франсуа Дюпон</p>
+                    <p class="name_painting">Птичья трапеза</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">22 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/francia/03-5.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Пьер Моранж</p>
+                    <p class="name_painting">Пейзаж с рыбой</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">20 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/francia/03-3.jpg" alt="Охота Амура">
-              <p class="author">Луи Летуш</p>
-              <p class="name_painting">Роза</p>
-              <p class="printing_house">Акрил, бумага (50х80)</p>
-              <p class="prices">12 000 руб</p>
-              <button>В корзину</button>
+            <div class="gallery germany display-none">
+              <ul>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/germania/03.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Курт Вернер</p>
+                    <p class="name_painting">Над городом</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">16 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/germania/03-1.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Макс Рихтер</p>
+                    <p class="name_painting">Птенцы</p>
+                    <p class="printing_house">Холст, масло (50х80)</p>
+                    <p class="prices">14 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/germania/03-2.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Мартин Майер</p>
+                    <p class="name_painting">Среди листьев</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">20 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/germania/03-3.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Герман Беккер</p>
+                    <p class="name_painting">Яркая птица</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">13 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/germania/03-4.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Вульф Бауэр</p>
+                    <p class="name_painting">Дятлы</p>
+                    <p class="printing_house">Бумага, акрил (40х60)</p>
+                    <p class="prices">20 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/germania/03-5.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Вальтер Хартманн</p>
+                    <p class="name_painting">Большие воды</p>
+                    <p class="printing_house">Бумага, акрил (50х80)</p>
+                    <p class="prices">23 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/francia/03-4.jpg" alt="Охота Амура">
-              <p class="author">Франсуа Дюпон</p>
-              <p class="name_painting">Птичья трапеза</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">22 500 руб</p>
-              <button>В корзину</button>
+            <div class="gallery avstria display-none">
+              <ul>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/avstria/03.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Пол Смит</p>
+                    <p class="name_painting">Дикий зверь</p>
+                    <p class="printing_house">Акрил, бумага (50х80)</p>
+                    <p class="prices">19 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/avstria/03-1.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Джон Уайт</p>
+                    <p class="name_painting">Скалистый берег</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">17 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/avstria/03-2.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Джим Уотсон</p>
+                    <p class="name_painting">Река и горы</p>
+                    <p class="printing_house">Акварель, бумага (50х70)</p>
+                    <p class="prices">20 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/avstria/03-3.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Юджин Зиллион</p>
+                    <p class="name_painting">Белый попугай</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">15 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/avstria/03-4.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Эрик Гиллман</p>
+                    <p class="name_painting">Ночная рыба</p>
+                    <p class="printing_house">Бумага, акрил (50х80)</p>
+                    <p class="prices">12 500 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+                <li>
+                  <div class="painting">
+                    <img
+                      src="/src/image/catalog/avstria/03-5.jpg"
+                      alt="Охота Амура"
+                    />
+                    <p class="author">Альфред Барр</p>
+                    <p class="name_painting">Рыжий кот</p>
+                    <p class="printing_house">Цветная, липография (40х60)</p>
+                    <p class="prices">21 000 руб</p>
+                    <button>В корзину</button>
+                  </div>
+                </li>
+              </ul>
             </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/francia/03-5.jpg" alt="Охота Амура">
-              <p class="author">Пьер Моранж</p>
-              <p class="name_painting">Пейзаж с рыбой</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">20 000 руб</p>
-              <button>В корзину</button>
+          </div>
+        </section>
+        <section class="collections" id="collections">
+          <img
+            class="promo"
+            src="/src/image/promo/pic_background.jpg"
+            alt="Новая коллекция францезский авторов"
+          />
+          <div class="news-description">
+            <div class="logo-news">
+              <img src="/src/image/promo/Star%202.png" alt="Лого звезды" />
+              <p>
+                Новая коллекция <br />
+                францезский авторов
+              </p>
             </div>
-          </li>
-        </ul>
-      </div>
-       <div class="gallery germany display-none">
-        <ul>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/germania/03.jpg" alt="Охота Амура">
-              <p class="author">Курт Вернер</p>
-              <p class="name_painting">Над городом</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">16 000 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/germania/03-1.jpg" alt="Охота Амура">
-              <p class="author">Макс Рихтер</p>
-              <p class="name_painting">Птенцы</p>
-              <p class="printing_house">Холст, масло (50х80)</p>
-              <p class="prices">14 500 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/germania/03-2.jpg" alt="Охота Амура">
-              <p class="author">Мартин Майер</p>
-              <p class="name_painting">Среди листьев</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">20 000 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/germania/03-3.jpg" alt="Охота Амура">
-              <p class="author">Герман Беккер</p>
-              <p class="name_painting">Яркая птица</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">13 000 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/germania/03-4.jpg" alt="Охота Амура">
-              <p class="author">Вульф Бауэр</p>
-              <p class="name_painting">Дятлы</p>
-              <p class="printing_house">Бумага, акрил (40х60)</p>
-              <p class="prices">20 000 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/germania/03-5.jpg" alt="Охота Амура">
-              <p class="author">Вальтер Хартманн</p>
-              <p class="name_painting">Большие воды</p>
-              <p class="printing_house">Бумага, акрил  (50х80)</p>
-              <p class="prices">23 000 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-        </ul>
-      </div>
-       <div class="gallery avstria display-none">
-        <ul>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/avstria/03.jpg" alt="Охота Амура">
-              <p class="author">Пол Смит</p>
-              <p class="name_painting">Дикий зверь</p>
-              <p class="printing_house">Акрил, бумага (50х80)</p>
-              <p class="prices">19 500 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/avstria/03-1.jpg" alt="Охота Амура">
-              <p class="author">Джон Уайт</p>
-              <p class="name_painting">Скалистый берег</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">17 500 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/avstria/03-2.jpg" alt="Охота Амура">
-              <p class="author">Джим Уотсон</p>
-              <p class="name_painting">Река и горы</p>
-              <p class="printing_house">Акварель, бумага (50х70)</p>
-              <p class="prices">20 500 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/avstria/03-3.jpg" alt="Охота Амура">
-              <p class="author">Юджин Зиллион</p>
-              <p class="name_painting">Белый попугай</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">15 500 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/avstria/03-4.jpg" alt="Охота Амура">
-              <p class="author">Эрик Гиллман</p>
-              <p class="name_painting">Ночная рыба</p>
-              <p class="printing_house">Бумага, акрил (50х80)</p>
-              <p class="prices">12 500 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-          <li>
-            <div class="painting">
-              <img src="/src/image/catalog/avstria/03-5.jpg" alt="Охота Амура">
-              <p class="author">Альфред Барр</p>
-              <p class="name_painting">Рыжий кот</p>
-              <p class="printing_house">Цветная, липография (40х60)</p>
-              <p class="prices">21 000 руб</p>
-              <button>В корзину</button>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <article id="news">
-    <img class="promo" src="/src/image/promo/pic_background.jpg" alt="Новая коллекция францезский авторов">
-    <div class="news-description">
-      <div class="logo-news">
-        <img src="/src/image/promo/Star%202.png" alt="Лого звезды">
-        <p>Новая коллекция <br> францезский авторов</p>
-      </div>
-      <div class="description-news">
-      <p>Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые,
-        в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.</p>
+            <div class="description-news">
+              <p>
+                Сложно сказать, почему акционеры крупнейших компаний призывают
+                нас к новым свершениям, которые, в свою очередь, должны быть
+                заблокированы в рамках своих собственных рациональных
+                ограничений.
+              </p>
 
-        <p>Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую
-        востребованность направлений прогрессивного развития.</p>
-      </div>
-      <button>Ознакомится</button>
+              <p>
+                Принимая во внимание показатели успешности, граница обучения
+                кадров предопределяет высокую востребованность направлений
+                прогрессивного развития.
+              </p>
+            </div>
+            <button>Ознакомится</button>
+          </div>
+        </section>
+        <section class="coworker container" id="coworker">
+          <div class="coworker">
+            <img src="/src/image/promo/Group%20210.png" alt="Паспорту" />
+          </div>
+          <div class="we-coworker">
+            <h2>Наша команда</h2>
+            <p>
+              Значимость этих проблем настолько очевидна, что базовый вектор
+              развития позволяет оценить значение экспериментов, поражающих по
+              своей масштабности и грандиозности. Мы вынуждены отталкиваться от
+              того, что консультация с широким активом.
+            </p>
+            <div class="coworker">
+              <img src="/src/image/coworker/Ellipse%2030.png" alt="Ирина" />
+              <img src="/src/image/coworker/Ellipse%2031.png" alt="Олег" />
+              <img src="/src/image/coworker/Ellipse%2032.png" alt="Анатолий" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="container">
+        <div class="footer-logo">
+          <a href="#"
+            ><img src="/src/image/logo/Frame%2085.svg" alt="Лого"
+          /></a>
+          <p>+7 (999) 543-54-54</p>
+          <span>Мастерская</span>
+        </div>
+        <div class="footer-menu">
+          <div>
+            <h3>Репродукция</h3>
+            <p><a href="#reproduce">Франция</a></p>
+            <p><a href="#reproduce">Германия</a></p>
+            <p><a href="#reproduce">Англия</a></p>
+          </div>
+          <div>
+            <h3>Новинки</h3>
+            <p><a href="#news">2021</a></p>
+            <p><a href="#news">2020</a></p>
+          </div>
+          <div>
+            <h3>О нас</h3>
+            <p><a href="#coworker-page">Художники</a></p>
+            <p><a href="#coworker-page">Менеджеры</a></p>
+          </div>
+        </div>
+        <div>
+          <div class="icon-massage">
+            <img src="/src/image/logo/mesage/Vector.png" alt="Facebook" />
+            <img src="/src/image/logo/mesage/Vector.svg" alt="Instagram" />
+            <img src="/src/image/logo/mesage/Vector-1.svg" alt="YouTube" />
+          </div>
+          <div class="inc">
+            <p>Ink. House ®</p>
+            <p>All rights reserved</p>
+          </div>
+        </div>
+      </footer>
     </div>
-  </article>
-  <div class="coworker-page" id="coworker-page">
-      <div class="image-coworker">
-        <img src="/src/image/promo/Group%20210.png" alt="Паспорту">
-    </div>
-    <div class="we-coworker">
-      <h2>Наша команда</h2>
-      <p>Значимость этих проблем настолько очевидна, что базовый вектор
-        развития позволяет оценить значение экспериментов, поражающих по своей
-        масштабности и грандиозности. Мы вынуждены отталкиваться от того, что
-        консультация с широким активом.</p>
-      <div class="coworker">
-        <img src="/src/image/coworker/Ellipse%2030.png" alt="Ирина">
-        <img src="/src/image/coworker/Ellipse%2031.png" alt="Олег">
-        <img src="/src/image/coworker/Ellipse%2032.png" alt="Анатолий">
-      </div>
-    </div>
-  </div>
-</main>
-<footer>
-    <div class="footer-logo">
-      <a href="#"><img src="/src/image/logo/Frame%2085.svg" alt="Лого"></a>
-      <p>+7 (999) 543-54-54</p>
-      <span>Мастерская</span>
-    </div>
-    <div class="footer-menu">
-      <div>
-        <h3>Репродукция</h3>
-        <p><a href="#reproduce">Франция</a></p>
-        <p><a href="#reproduce">Германия</a></p>
-        <p><a href="#reproduce">Англия</a></p>
-      </div>
-      <div>
-        <h3>Новинки</h3>
-        <p><a href="#news">2021</a></p>
-        <p><a href="#news">2020</a></p>
-      </div>
-      <div>
-        <h3>О нас</h3>
-        <p><a href="#coworker-page">Художники</a></p>
-        <p><a href="#coworker-page">Менеджеры</a></p>
-      </div>
-    </div>
-    <div>
-      <div class="icon-massage">
-        <img src="/src/image/logo/mesage/Vector.png" alt="Facebook">
-        <img src="/src/image/logo/mesage/Vector.svg" alt="Instagram">
-        <img src="/src/image/logo/mesage/Vector-1.svg" alt="YouTube">
-      </div>
-      <div class="inc">
-        <p>Ink. House ®</p>
-        <p>All rights reserved</p>
-      </div>
-    </div>
-</footer>
-  <script src="../js/script.js"></script>
-</body>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
