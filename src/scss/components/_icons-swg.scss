@@ -1,0 +1,33 @@
+@mixin cart($size: 1.2rem) {
+  width: $size;
+  height: $size;
+  display: block;
+  &:hover {
+    color: var(--color-green-600);
+  }
+  &:focus {
+    background-color: var(--color-green-200);
+  }
+  &:active {
+    color: var(--color-green-800);
+    background-color: var(--color-green-100);
+  }
+}
+
+//@mixin view-box-massage {
+//  background-image: url("/src/image/cart/Frame 217.svg");
+//  background-size: contain;
+//  background-repeat: no-repeat;
+//  background-position: center;
+//  &:hover {
+//    background-image: url("/src/image/cart/status=hover.svg");
+//  }
+//
+//  &:focus {
+//    background-image: url("/src/image/cart/status=focus.svg");
+//  }
+//
+//  &:active {
+//    background-image: url("/src/image/cart/status=active.svg");;
+//  }
+//}   отредактировать

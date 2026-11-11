@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="/src/scss/style.css" />
   </head>
   <body>
-    <header class="header container">
-        <div>
-          <a class="header__logo" href="#"
+    <header class="header">
+      <div class="header__container container">
+        <div class="header--logo logo">
+          <a href="#"
             ><img src="/src/image/logo/Frame%2085.svg" alt="Лого"
           /></a>
         </div>
-        <nav>
-          <a href="#reproduce">Репродукция</a>
-          <a href="#news">Новинки</a>
-          <a href="#coworker-page">О нас</a>
-          <a href="http://localhost:63342/korzina"
-            ><img src="/src/image/cart/Frame%20217.svg" alt="Корзина"
-          /></a>
+        <nav class="header__nav">
+          <button class="header__nav--burger">
+            <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4.6875 21.5625C4.6875 21.3139 4.78627 21.0754 4.96209 20.8996C5.1379 20.7238 5.37636 20.625 5.625 20.625H24.375C24.6236 20.625 24.8621 20.7238 25.0379 20.8996C25.2137 21.0754 25.3125 21.3139 25.3125 21.5625C25.3125 21.8111 25.2137 22.0496 25.0379 22.2254C24.8621 22.4012 24.6236 22.5 24.375 22.5H5.625C5.37636 22.5 5.1379 22.4012 4.96209 22.2254C4.78627 22.0496 4.6875 21.8111 4.6875 21.5625ZM4.6875 14.0625C4.6875 13.8139 4.78627 13.5754 4.96209 13.3996C5.1379 13.2238 5.37636 13.125 5.625 13.125H24.375C24.6236 13.125 24.8621 13.2238 25.0379 13.3996C25.2137 13.5754 25.3125 13.8139 25.3125 14.0625C25.3125 14.3111 25.2137 14.5496 25.0379 14.7254C24.8621 14.9012 24.6236 15 24.375 15H5.625C5.37636 15 5.1379 14.9012 4.96209 14.7254C4.78627 14.5496 4.6875 14.3111 4.6875 14.0625ZM4.6875 6.5625C4.6875 6.31386 4.78627 6.0754 4.96209 5.89959C5.1379 5.72377 5.37636 5.625 5.625 5.625H24.375C24.6236 5.625 24.8621 5.72377 25.0379 5.89959C25.2137 6.0754 25.3125 6.31386 25.3125 6.5625C25.3125 6.81114 25.2137 7.0496 25.0379 7.22541C24.8621 7.40123 24.6236 7.5 24.375 7.5H5.625C5.37636 7.5 5.1379 7.40123 4.96209 7.22541C4.78627 7.0496 4.6875 6.81114 4.6875 6.5625Z" fill-rule="evenodd" clip-rule="evenodd" fill="#4C5866" stroke="currentColor"/>
+          </svg>
+          </button>
+          <ul class="header__nav--list">
+            <li class="header__nav--item"><a class="header__nav--link" href="#reproduce">Репродукция</a></li>
+            <li class="header__nav--item"><a class="header__nav--link" href="#">Новинки</a></li>
+            <li class="header__nav--item"><a class="header__nav--link" href="#">О нас</a></li>
+          </ul>
+          <button class="header__nav--cart"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_4_1053)">
+              <path d="M9.16658 19.25C9.16658 19.7563 8.75618 20.1667 8.24992 20.1667C7.74366 20.1667 7.33325 19.7563 7.33325 19.25C7.33325 18.7438 7.74366 18.3334 8.24992 18.3334C8.75618 18.3334 9.16658 18.7438 9.16658 19.25Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/>
+              <path d="M19.2501 19.25C19.2501 19.7563 18.8397 20.1667 18.3334 20.1667C17.8272 20.1667 17.4167 19.7563 17.4167 19.25C17.4167 18.7438 17.8272 18.3334 18.3334 18.3334C18.8397 18.3334 19.2501 18.7438 19.2501 19.25Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/>
+              <path d="M0.916748 0.916626H4.58341L7.04008 13.1908C7.12391 13.6128 7.3535 13.9919 7.68866 14.2617C8.02383 14.5315 8.44322 14.6749 8.87341 14.6666H17.7834C18.2136 14.6749 18.633 14.5315 18.9682 14.2617C19.3033 13.9919 19.5329 13.6128 19.6167 13.1908L21.0834 5.49996H5.50008" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_4_1053">
+                <rect width="22" height="22" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          </button>
         </nav>
+      </div>
       </header>
-      <main>
+      <main class="main">
         <section class="hero container">
           <img src="/src/image/hero/bird.png" alt="Птица" />
-          <div class="hero__text">
-            <h1>Реплики картин от Ink. House</h1>
+          <div class="hero--text">
+            <h1>Реплики картин от <span>Ink. House</span></h1>
             <p>
               Высокое качество отрисовки на плотной бумаге или льняном холсте.
               Редкие произведения, доступные цены.
@@ -36,277 +55,180 @@
         </section>
         <section class="reproduce container" id="reproduce">
           <div class="reproduce__menu">
-            </div>
             <h2>Репродукции</h2>
-            <div class="reproduce__menu__nav">
-              <button class="active country francia">Франция</button>
-              <button class="country germany">Германия</button>
-              <button class="country avstria">Англия</button>
+            <div class="reproduce__nav">
+              <button class="active country reproduce__nav__francia">Франция</button>
+              <button class="country reproduce__nav__germany">Германия</button>
+              <button class="country reproduce__nav__avstria">Австрия</button>
             </div>
-          <div>
-            <div class="gallery francia">
-              <ul>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/francia/03.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Марсель Руссо</p>
-                    <p class="name_painting">Охота на Амура</p>
-                    <p class="printing_house">Холст, масло (50х80)</p>
-                    <p class="prices">14 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/francia/03-1.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Анри Селин</p>
-                    <p class="name_painting">Дама с собачкой</p>
-                    <p class="printing_house">Акрил, бумага (50х80)</p>
-                    <p class="prices">16 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/francia/03-2.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Франсуа Дюпон</p>
-                    <p class="name_painting">Процедура</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">20 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/francia/03-3.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Луи Летуш</p>
-                    <p class="name_painting">Роза</p>
-                    <p class="printing_house">Акрил, бумага (50х80)</p>
-                    <p class="prices">12 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/francia/03-4.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Франсуа Дюпон</p>
-                    <p class="name_painting">Птичья трапеза</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">22 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/francia/03-5.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Пьер Моранж</p>
-                    <p class="name_painting">Пейзаж с рыбой</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">20 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-              </ul>
+          </div>
+          <div class="reproduce__gallery">
+            <div class="reproduce__francia">
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/francia/03.jpg" alt="Охота Амура">
+                <div class="reproduce__author">Марсель Руссо</div>
+                <div class="reproduce__name">Охота на Амура</div>
+                <div class="reproduce__material">Холст, масло (50х80)</div>
+                <div class="reproduce__prices">14 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/francia/03-1.jpg" alt="Дама с собачкой">
+                <div class="reproduce__author">Анри Селин</div>
+                <div class="reproduce__name">Дама с собачкой</div>
+                <div class="reproduce__material">Акрил, бумага (50х80)</div>
+                <div class="reproduce__prices">16 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/francia/03-2.jpg" alt="Процедура">
+                <div class="reproduce__author">Франсуа Дюпон</div>
+                <div class="reproduce__name">Процедура</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/francia/03-3.jpg" alt="Роза">
+                <div class="reproduce__author">Луи Летуш</div>
+                <div class="reproduce__name">Роза</div>
+                <div class="reproduce__material">Акрил, бумага (50х80)</div>
+                <div class="reproduce__prices">12 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/francia/03-4.jpg" alt="Птичья трапеза">
+                <div class="reproduce__author">Франсуа Дюпон</div>
+                <div class="reproduce__name">Птичья трапеза</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">22 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/francia/03-5.jpg" alt="Пейзаж с рыбой">
+                <div class="reproduce__author">Пьер Моранж</div>
+                <div class="reproduce__name">Пейзаж с рыбой</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
             </div>
-            <div class="gallery germany display-none">
-              <ul>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/germania/03.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Курт Вернер</p>
-                    <p class="name_painting">Над городом</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">16 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/germania/03-1.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Макс Рихтер</p>
-                    <p class="name_painting">Птенцы</p>
-                    <p class="printing_house">Холст, масло (50х80)</p>
-                    <p class="prices">14 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/germania/03-2.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Мартин Майер</p>
-                    <p class="name_painting">Среди листьев</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">20 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/germania/03-3.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Герман Беккер</p>
-                    <p class="name_painting">Яркая птица</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">13 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/germania/03-4.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Вульф Бауэр</p>
-                    <p class="name_painting">Дятлы</p>
-                    <p class="printing_house">Бумага, акрил (40х60)</p>
-                    <p class="prices">20 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/germania/03-5.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Вальтер Хартманн</p>
-                    <p class="name_painting">Большие воды</p>
-                    <p class="printing_house">Бумага, акрил (50х80)</p>
-                    <p class="prices">23 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-              </ul>
+            <div class="reproduce__germany display-none">
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/germania/03.jpg" alt="Над городом">
+                <div class="reproduce__author">Курт Вернер</div>
+                <div class="reproduce__name">Над городом</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">16 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/germania/03-1.jpg" alt="Птенцы">
+                <div class="reproduce__author">Макс Рихтер</div>
+                <div class="reproduce__name">Птенцы</div>
+                <div class="reproduce__material">Холст, масло (50х80)</div>
+                <div class="reproduce__prices">14 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/germania/03-2.jpg" alt="Среди листьев">
+                <div class="reproduce__author">Мартин Майер</div>
+                <div class="reproduce__name">Среди листьев</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/germania/03-3.jpg" alt="Яркая птица">
+                <div class="reproduce__author">Герман Беккер</div>
+                <div class="reproduce__name">Яркая птица</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">13 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/germania/03-4.jpg" alt="Дятлы">
+                <div class="reproduce__author">Вульф Бауэр</div>
+                <div class="reproduce__name">Дятлы</div>
+                <div class="reproduce__material">Бумага, акрил (40х60)</div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/germania/03-5.jpg" alt="Большие воды">
+                <div class="reproduce__author">Вальтер Хартманн</div>
+                <div class="reproduce__name">Большие воды</div>
+                <div class="reproduce__material">Бумага, акрил (50х80)</div>
+                <div class="reproduce__prices">23 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
             </div>
-            <div class="gallery avstria display-none">
-              <ul>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/avstria/03.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Пол Смит</p>
-                    <p class="name_painting">Дикий зверь</p>
-                    <p class="printing_house">Акрил, бумага (50х80)</p>
-                    <p class="prices">19 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/avstria/03-1.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Джон Уайт</p>
-                    <p class="name_painting">Скалистый берег</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">17 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/avstria/03-2.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Джим Уотсон</p>
-                    <p class="name_painting">Река и горы</p>
-                    <p class="printing_house">Акварель, бумага (50х70)</p>
-                    <p class="prices">20 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/avstria/03-3.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Юджин Зиллион</p>
-                    <p class="name_painting">Белый попугай</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">15 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/avstria/03-4.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Эрик Гиллман</p>
-                    <p class="name_painting">Ночная рыба</p>
-                    <p class="printing_house">Бумага, акрил (50х80)</p>
-                    <p class="prices">12 500 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-                <li>
-                  <div class="painting">
-                    <img
-                      src="/src/image/catalog/avstria/03-5.jpg"
-                      alt="Охота Амура"
-                    />
-                    <p class="author">Альфред Барр</p>
-                    <p class="name_painting">Рыжий кот</p>
-                    <p class="printing_house">Цветная, липография (40х60)</p>
-                    <p class="prices">21 000 руб</p>
-                    <button>В корзину</button>
-                  </div>
-                </li>
-              </ul>
+            <div class="reproduce__avstria display-none">
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/avstria/03.jpg" alt="Дикий зверь">
+                <div class="reproduce__author">Пол Смит</div>
+                <div class="reproduce__name">Дикий зверь</div>
+                <div class="reproduce__material">Акрил, бумага (50х80)</div>
+                <div class="reproduce__prices">19 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/avstria/03-1.jpg" alt="Скалистый берег">
+                <div class="reproduce__author">Джон Уайт</div>
+                <div class="reproduce__name">Скалистый берег</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">17 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/avstria/03-2.jpg" alt="Река и горы">
+                <div class="reproduce__author">Джим Уотсон</div>
+                <div class="reproduce__name">Река и горы</div>
+                <div class="reproduce__material">Акварель, бумага (50х70)</div>
+                <div class="reproduce__prices">20 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/avstria/03-3.jpg" alt="Белый попугай">
+                <div class="reproduce__author">Юджин Зиллион</div>
+                <div class="reproduce__name">Белый попугай</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">15 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/avstria/03-4.jpg" alt="Ночная рыба">
+                <div class="reproduce__author">Эрик Гиллман</div>
+                <div class="reproduce__name">Ночная рыба</div>
+                <div class="reproduce__material">Бумага, акрил (50х80)</div>
+                <div class="reproduce__prices">12 500 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
+              <div class="reproduce__painting">
+                <img class="reproduce__image" src="/src/image/catalog/avstria/03-5.jpg" alt="Рыжий кот">
+                <div class="reproduce__author">Альфред Барр</div>
+                <div class="reproduce__name">Рыжий кот</div>
+                <div class="reproduce__material">Цветная, липография (40х60)</div>
+                <div class="reproduce__prices">21 000 руб</div>
+                <button type="button" class="reproduce__button">В корзину</button>
+              </div>
             </div>
           </div>
         </section>
         <section class="collections" id="collections">
           <img
-            class="promo"
+            class="collections__image"
             src="/src/image/promo/pic_background.jpg"
             alt="Новая коллекция францезский авторов"
           />
-          <div class="news-description">
-            <div class="logo-news">
-              <img src="/src/image/promo/Star%202.png" alt="Лого звезды" />
-              <p>
-                Новая коллекция <br />
-                францезский авторов
-              </p>
+          <div class="collections__description">
+            <div class="collections__promo">
+              <img src="/src/image/promo/Star%202.svg" alt="Лого звезды" />
+              <h2>
+                Новая коллекция французский авторов
+              </h2>
             </div>
-            <div class="description-news">
+            <div class="collections__text">
               <p>
                 Сложно сказать, почему акционеры крупнейших компаний призывают
                 нас к новым свершениям, которые, в свою очередь, должны быть

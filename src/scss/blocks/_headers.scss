@@ -1,0 +1,82 @@
+.header {
+  background-color: var(--color-green-100);
+  padding-block: 1.65rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--logo {
+    height: 1.75rem;
+    width: 142px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    &--burger {
+      display: none;
+    }
+
+    &--list {
+      display: flex;
+      align-items: center;
+      gap: 3rem
+    }
+
+    &--cart {
+      @include cart(1.25rem);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    &nav--item {
+      font-size: 0.9rem;
+  }}}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-block: 0.8rem;
+
+    &__container {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    &__nav {
+      border-top: 1px solid var(--color-green-300);
+      padding-top: 0.8rem;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }}
+
+@media screen and (max-width: 576px) {
+  .header {
+    background: linear-gradient(to bottom, var(--color-white) 50%, var(--color-green-100) 50%);
+
+    &__nav {
+      padding-inline: 0.75rem;
+      border-top: none;
+
+      &--burger {
+        display: flex;
+        @include cart(1.5rem)
+      }
+
+      &--list {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
@@ -17,29 +18,40 @@ body {
   padding: 0 15px;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-inline: 0.39rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-inline: 0.33rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 0.15rem;
+  }
+}
+
 button {
   cursor: pointer;
   transition: all 0.1s ease;
 }
 
-.primary_btn {
-  font-size: 20px;
-  padding: 20px 60px;
-}
-
-.tab_btn {
-  border-right: 20px;
-  padding: 10px 20px;
-  font-size: 20px;
-}
-
 h1 {
   font-size: 60px;
   line-height: 110%;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 40px;
+  font-weight: 500;
+  line-height: 110%;
+
 }
 
 .cards {
@@ -47,3 +59,4 @@ h2 {
     margin-left: 20px;
   }
 }
+

@@ -32,6 +32,17 @@ main {
   display: block;
 }
 
+a {
+  text-decoration: none; /* Убирает подчеркивание */
+  color: inherit;        /* Наследует цвет текста от родителя */
+}
+
+ul, ol, li {
+  list-style: none; /* Убирает точки, цифры и другие маркеры */
+  padding: 0;       /* Убирает внутренний отступ слева */
+  margin: 0;        /* Убирает внешний отступ */
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -346,4 +357,11 @@ template {
 
 [hidden] {
   display: none;
+}
+
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
 }
