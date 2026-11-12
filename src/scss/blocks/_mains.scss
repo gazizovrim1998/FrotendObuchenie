@@ -141,6 +141,31 @@
     }
   }
 
+  .coworker {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    &__description {
+      width: 445px;
+      height: 440px;
+    }
+    &__we {
+      margin-top: 124px;
+      h2 {
+        margin: 0;
+      }
+      p {
+        margin-block: 20px 20px;
+        font-size: 18px;
+        line-height: 150%;
+      }
+    }
+    &__image {
+    }
+
+  }
 
 
 
