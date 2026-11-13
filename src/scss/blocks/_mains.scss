@@ -35,7 +35,7 @@
       }
 
       button {
-        @include button-primary;
+        @include button-primary(20px, 60px);
       }
     }
 
@@ -45,7 +45,8 @@
         height: 380px;
       }
       &__text {
-        margin-top: 35px;
+        padding-top: 35px;
+        margin-top: 0;
         width: 330px;
         h1 {
           width: 330px;
@@ -55,15 +56,20 @@
           }
         }
       }
+      button {
+        @include button-primary(18.5px, 51.5px);
+      }
     }
     @media (max-width: 768px) {
       &__container {
         margin-top: 50px;
         gap: 0;
         justify-content: center;
+        height: 240px;
       }
       &__text {
-        margin-top: 35px;
+        margin-top: 0;
+        padding-top: 0;
         width: 330px;
         h1 {
           width: 285px;
@@ -72,12 +78,45 @@
             font-size: 36px;
           }
         }
+        p {
+          margin-block: 0 10px;
+        }
+      }
+      button {
+        @include button-primary(14.5px, 41px);
+      }
+    }
+    @media (max-width: 576px) {
+      &__container {
+        margin-top: 60px;
+        height: 233px;
+      }
+      &__bird {
+        display: none;
+      }
+      &__text {
+        margin-top: 0;
+        h1 {
+          width: 250px;
+          font-size: 30px;
+          span {
+            font-size: 30px;
+          }
+        }
+        p {
+          font-size: 14px;
+          margin-block: 10px 40px;
+        }
+      }
+      button {
+        @include button-primary(14.5px, 29px);
       }
     }
   }
   .reproduce {
-    margin-top: 70px;
-
+    &__container {
+      margin-top: 70px;
+    }
     &__menu {
       display: flex;
       justify-content: space-between;
@@ -114,6 +153,9 @@
     @include gallery__1440-510;
 
     @media (max-width: 1200px) {
+      &__container {
+        padding-inline: 15px;
+      }
       &__francia, &__germany, &__avstria {
         grid-template-columns: 1fr 1fr;
       }
@@ -127,13 +169,20 @@
       &__title {
         font-size: 24px;
       }
+      @include gallery__510;
     }
-    @include gallery__510;
+    @media (max-width: 576px) {
+      &__container {
+        margin-top: 60px;
+      }
+      &__francia, &__germany, &__avstria {
+        grid-template-columns: 1fr;
+      }
+      }
   }
   .collections {
-    margin-top: 70px;
-
     &__container {
+      margin-top: 70px;
       background-image: url('../image/promo/pic_background.jpg');
       background-size: cover;
       background-position: center;
@@ -207,38 +256,57 @@
         margin-bottom: 20px;
       }
     }
+    @media (max-width: 576px) {
+      &__container {
+        background-image: url('../image/promo/pic_background_576.jpg');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+      }
+      &__promo {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &__text {
+        margin-bottom: 30px;
+      }
+    &__button {
+      width: 100%;
+    }
+    }
   }
   .coworker {
     &__container {
       padding-block: 70px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30px;
     }
     &__description {
-      width: 445px;
-      height: 440px;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px
     }
     &__we {
       margin-top: 124px;
-      }
+    }
     &__title {
-      margin: 0
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 110%;
+      margin: 0;
+      padding: 0
     }
     &__text {
-      margin-block: 20px 20px;
+      font-weight: 500;
       font-size: 18px;
       line-height: 150%;
     }
-    &__image {
-      display: flex;
-      gap: 20px;
-    }
+
     @media (max-width: 1200px) {
       &__container {
+        padding-inline: 40px;
+      }
+      &__description {
         display: block;
-        width: 690px;
       }
       &__we {
         margin-top: 40px;
@@ -246,29 +314,37 @@
       &__title {
         font-size: 30px;
       }
-      &__text {
-        font-size: 18px;
-        margin-block: 30px;
-      }
     }
     @media (max-width: 768px) {
       &__container {
         padding-block: 50px;
-        width: 100%;
+        padding-inline: 40px;
+      }
+      &__description {
+        display: block;
       }
       &__we {
         margin-top: 30px;
+        h2 {
+        font-size: 24px;}
       }
       &__title {
-        font-size: 24px;
-      }
-      &__text {
+        font-weight: 500;
         font-size: 16px;
-        margin-block: 20px;
+        line-height: 140%;
+        letter-spacing: 0%;
+      }
+    }
+    @media (max-width: 576px) {
+      &__container {
+        padding-bottom: 60px;
+        padding-inline: 15px;
+      }
+      &__description {
+        display: block;
       }
     }
   }
-
   .display-none {
     display: none;
   }

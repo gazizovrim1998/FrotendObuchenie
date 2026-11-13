@@ -88,7 +88,7 @@
           </div>
           <div class="hero__text">
             <h1>Реплики картин от <span>Ink. House</span></h1>
-            <p>
+            <p class="hero__description">
               Высокое качество отрисовки на плотной бумаге или льняном холсте.
               Редкие произведения, доступные цены.
             </p>
@@ -96,238 +96,294 @@
           </div>
         </div>
       </section>
-      <section class="reproduce container" id="reproduce">
-        <div class="reproduce__menu">
-          <h2 class="reproduce__title">Репродукции</h2>
-          <div class="reproduce__nav">
-            <button class="active country reproduce__nav__francia">
-              Франция
-            </button>
-            <button class="country reproduce__nav__germany">Германия</button>
-            <button class="country reproduce__nav__avstria">Австрия</button>
-          </div>
-        </div>
-        <div class="reproduce__gallery">
-          <div class="reproduce__francia">
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/francia/03.jpg"
-                alt="Охота Амура"
-              />
-              <div class="reproduce__author">Марсель Руссо</div>
-              <div class="reproduce__name">Охота на Амура</div>
-              <div class="reproduce__material">Холст, масло (50х80)</div>
-              <div class="reproduce__prices">14 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/francia/03-1.jpg"
-                alt="Дама с собачкой"
-              />
-              <div class="reproduce__author">Анри Селин</div>
-              <div class="reproduce__name">Дама с собачкой</div>
-              <div class="reproduce__material">Акрил, бумага (50х80)</div>
-              <div class="reproduce__prices">16 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/francia/03-2.jpg"
-                alt="Процедура"
-              />
-              <div class="reproduce__author">Франсуа Дюпон</div>
-              <div class="reproduce__name">Процедура</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">20 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/francia/03-3.jpg"
-                alt="Роза"
-              />
-              <div class="reproduce__author">Луи Летуш</div>
-              <div class="reproduce__name">Роза</div>
-              <div class="reproduce__material">Акрил, бумага (50х80)</div>
-              <div class="reproduce__prices">12 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/francia/03-4.jpg"
-                alt="Птичья трапеза"
-              />
-              <div class="reproduce__author">Франсуа Дюпон</div>
-              <div class="reproduce__name">Птичья трапеза</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">22 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/francia/03-5.jpg"
-                alt="Пейзаж с рыбой"
-              />
-              <div class="reproduce__author">Пьер Моранж</div>
-              <div class="reproduce__name">Пейзаж с рыбой</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">20 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
+      <section class="reproduce" id="reproduce">
+        <div class="reproduce__container container">
+          <div class="reproduce__menu">
+            <h2 class="reproduce__title">Репродукции</h2>
+            <div class="reproduce__nav">
+              <button class="active country reproduce__nav__francia">
+                Франция
+              </button>
+              <button class="country reproduce__nav__germany">Германия</button>
+              <button class="country reproduce__nav__avstria">Австрия</button>
             </div>
           </div>
-          <div class="reproduce__germany display-none">
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/germania/03.jpg"
-                alt="Над городом"
-              />
-              <div class="reproduce__author">Курт Вернер</div>
-              <div class="reproduce__name">Над городом</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">16 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
+          <div class="reproduce__gallery">
+            <div class="reproduce__francia">
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/francia/03.jpg"
+                  alt="Охота Амура"
+                />
+                <div class="reproduce__author">Марсель Руссо</div>
+                <div class="reproduce__name">Охота на Амура</div>
+                <div class="reproduce__material">Холст, масло (50х80)</div>
+                <div class="reproduce__prices">14 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/francia/03-1.jpg"
+                  alt="Дама с собачкой"
+                />
+                <div class="reproduce__author">Анри Селин</div>
+                <div class="reproduce__name">Дама с собачкой</div>
+                <div class="reproduce__material">Акрил, бумага (50х80)</div>
+                <div class="reproduce__prices">16 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/francia/03-2.jpg"
+                  alt="Процедура"
+                />
+                <div class="reproduce__author">Франсуа Дюпон</div>
+                <div class="reproduce__name">Процедура</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/francia/03-3.jpg"
+                  alt="Роза"
+                />
+                <div class="reproduce__author">Луи Летуш</div>
+                <div class="reproduce__name">Роза</div>
+                <div class="reproduce__material">Акрил, бумага (50х80)</div>
+                <div class="reproduce__prices">12 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/francia/03-4.jpg"
+                  alt="Птичья трапеза"
+                />
+                <div class="reproduce__author">Франсуа Дюпон</div>
+                <div class="reproduce__name">Птичья трапеза</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">22 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/francia/03-5.jpg"
+                  alt="Пейзаж с рыбой"
+                />
+                <div class="reproduce__author">Пьер Моранж</div>
+                <div class="reproduce__name">Пейзаж с рыбой</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
             </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/germania/03-1.jpg"
-                alt="Птенцы"
-              />
-              <div class="reproduce__author">Макс Рихтер</div>
-              <div class="reproduce__name">Птенцы</div>
-              <div class="reproduce__material">Холст, масло (50х80)</div>
-              <div class="reproduce__prices">14 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
+            <div class="reproduce__germany display-none">
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/germania/03.jpg"
+                  alt="Над городом"
+                />
+                <div class="reproduce__author">Курт Вернер</div>
+                <div class="reproduce__name">Над городом</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">16 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/germania/03-1.jpg"
+                  alt="Птенцы"
+                />
+                <div class="reproduce__author">Макс Рихтер</div>
+                <div class="reproduce__name">Птенцы</div>
+                <div class="reproduce__material">Холст, масло (50х80)</div>
+                <div class="reproduce__prices">14 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/germania/03-2.jpg"
+                  alt="Среди листьев"
+                />
+                <div class="reproduce__author">Мартин Майер</div>
+                <div class="reproduce__name">Среди листьев</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/germania/03-3.jpg"
+                  alt="Яркая птица"
+                />
+                <div class="reproduce__author">Герман Беккер</div>
+                <div class="reproduce__name">Яркая птица</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">13 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/germania/03-4.jpg"
+                  alt="Дятлы"
+                />
+                <div class="reproduce__author">Вульф Бауэр</div>
+                <div class="reproduce__name">Дятлы</div>
+                <div class="reproduce__material">Бумага, акрил (40х60)</div>
+                <div class="reproduce__prices">20 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/germania/03-5.jpg"
+                  alt="Большие воды"
+                />
+                <div class="reproduce__author">Вальтер Хартманн</div>
+                <div class="reproduce__name">Большие воды</div>
+                <div class="reproduce__material">Бумага, акрил (50х80)</div>
+                <div class="reproduce__prices">23 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
             </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/germania/03-2.jpg"
-                alt="Среди листьев"
-              />
-              <div class="reproduce__author">Мартин Майер</div>
-              <div class="reproduce__name">Среди листьев</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">20 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/germania/03-3.jpg"
-                alt="Яркая птица"
-              />
-              <div class="reproduce__author">Герман Беккер</div>
-              <div class="reproduce__name">Яркая птица</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">13 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/germania/03-4.jpg"
-                alt="Дятлы"
-              />
-              <div class="reproduce__author">Вульф Бауэр</div>
-              <div class="reproduce__name">Дятлы</div>
-              <div class="reproduce__material">Бумага, акрил (40х60)</div>
-              <div class="reproduce__prices">20 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/germania/03-5.jpg"
-                alt="Большие воды"
-              />
-              <div class="reproduce__author">Вальтер Хартманн</div>
-              <div class="reproduce__name">Большие воды</div>
-              <div class="reproduce__material">Бумага, акрил (50х80)</div>
-              <div class="reproduce__prices">23 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-          </div>
-          <div class="reproduce__avstria display-none">
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/avstria/03.jpg"
-                alt="Дикий зверь"
-              />
-              <div class="reproduce__author">Пол Смит</div>
-              <div class="reproduce__name">Дикий зверь</div>
-              <div class="reproduce__material">Акрил, бумага (50х80)</div>
-              <div class="reproduce__prices">19 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/avstria/03-1.jpg"
-                alt="Скалистый берег"
-              />
-              <div class="reproduce__author">Джон Уайт</div>
-              <div class="reproduce__name">Скалистый берег</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">17 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/avstria/03-2.jpg"
-                alt="Река и горы"
-              />
-              <div class="reproduce__author">Джим Уотсон</div>
-              <div class="reproduce__name">Река и горы</div>
-              <div class="reproduce__material">Акварель, бумага (50х70)</div>
-              <div class="reproduce__prices">20 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/avstria/03-3.jpg"
-                alt="Белый попугай"
-              />
-              <div class="reproduce__author">Юджин Зиллион</div>
-              <div class="reproduce__name">Белый попугай</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">15 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/avstria/03-4.jpg"
-                alt="Ночная рыба"
-              />
-              <div class="reproduce__author">Эрик Гиллман</div>
-              <div class="reproduce__name">Ночная рыба</div>
-              <div class="reproduce__material">Бумага, акрил (50х80)</div>
-              <div class="reproduce__prices">12 500 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
-            </div>
-            <div class="reproduce__painting">
-              <img
-                class="reproduce__image"
-                src="/src/image/catalog/avstria/03-5.jpg"
-                alt="Рыжий кот"
-              />
-              <div class="reproduce__author">Альфред Барр</div>
-              <div class="reproduce__name">Рыжий кот</div>
-              <div class="reproduce__material">Цветная, липография (40х60)</div>
-              <div class="reproduce__prices">21 000 руб</div>
-              <button type="button" class="reproduce__button">В корзину</button>
+            <div class="reproduce__avstria display-none">
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/avstria/03.jpg"
+                  alt="Дикий зверь"
+                />
+                <div class="reproduce__author">Пол Смит</div>
+                <div class="reproduce__name">Дикий зверь</div>
+                <div class="reproduce__material">Акрил, бумага (50х80)</div>
+                <div class="reproduce__prices">19 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/avstria/03-1.jpg"
+                  alt="Скалистый берег"
+                />
+                <div class="reproduce__author">Джон Уайт</div>
+                <div class="reproduce__name">Скалистый берег</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">17 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/avstria/03-2.jpg"
+                  alt="Река и горы"
+                />
+                <div class="reproduce__author">Джим Уотсон</div>
+                <div class="reproduce__name">Река и горы</div>
+                <div class="reproduce__material">Акварель, бумага (50х70)</div>
+                <div class="reproduce__prices">20 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/avstria/03-3.jpg"
+                  alt="Белый попугай"
+                />
+                <div class="reproduce__author">Юджин Зиллион</div>
+                <div class="reproduce__name">Белый попугай</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">15 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/avstria/03-4.jpg"
+                  alt="Ночная рыба"
+                />
+                <div class="reproduce__author">Эрик Гиллман</div>
+                <div class="reproduce__name">Ночная рыба</div>
+                <div class="reproduce__material">Бумага, акрил (50х80)</div>
+                <div class="reproduce__prices">12 500 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
+              <div class="reproduce__painting">
+                <img
+                  class="reproduce__image"
+                  src="/src/image/catalog/avstria/03-5.jpg"
+                  alt="Рыжий кот"
+                />
+                <div class="reproduce__author">Альфред Барр</div>
+                <div class="reproduce__name">Рыжий кот</div>
+                <div class="reproduce__material">
+                  Цветная, липография (40х60)
+                </div>
+                <div class="reproduce__prices">21 000 руб</div>
+                <button type="button" class="reproduce__button">
+                  В корзину
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -353,27 +409,31 @@
                 прогрессивного развития.
               </p>
             </div>
-            <button>Ознакомится</button>
+            <button class="collections__button">Ознакомится</button>
           </div>
         </div>
       </section>
       <section class="coworker" id="coworker">
         <div class="coworker__container container">
-          <div class="coworker__decoration">
+          <div class="coworker__description">
+            <div class="coworker__decoration"></div>
             <img src="/src/image/promo/Group%20210.png" alt="Паспорту" />
-          </div>
-          <div class="coworker__we">
-            <h2 class="coworker__title">Наша команда</h2>
-            <p class="coworker__text">
-              Значимость этих проблем настолько очевидна, что базовый вектор
-              развития позволяет оценить значение экспериментов, поражающих по
-              своей масштабности и грандиозности. Мы вынуждены отталкиваться от
-              того, что консультация с широким активом.
-            </p>
-            <div class="coworker__image">
-              <img src="/src/image/coworker/Ellipse%2030.png" alt="Ирина" />
-              <img src="/src/image/coworker/Ellipse%2031.png" alt="Олег" />
-              <img src="/src/image/coworker/Ellipse%2032.png" alt="Анатолий" />
+            <div class="coworker__we">
+              <h2 class="coworker__title">Наша команда</h2>
+              <p class="coworker__text">
+                Значимость этих проблем настолько очевидна, что базовый вектор
+                развития позволяет оценить значение экспериментов, поражающих по
+                своей масштабности и грандиозности. Мы вынуждены отталкиваться
+                от того, что консультация с широким активом.
+              </p>
+              <div class="coworker__image">
+                <img src="/src/image/coworker/Ellipse%2030.png" alt="Ирина" />
+                <img src="/src/image/coworker/Ellipse%2031.png" alt="Олег" />
+                <img
+                  src="/src/image/coworker/Ellipse%2032.png"
+                  alt="Анатолий"
+                />
+              </div>
             </div>
           </div>
         </div>
