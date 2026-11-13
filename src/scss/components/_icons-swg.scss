@@ -14,20 +14,19 @@
   }
 }
 
-//@mixin view-box-massage {
-//  background-image: url("/src/image/cart/Frame 217.svg");
-//  background-size: contain;
-//  background-repeat: no-repeat;
-//  background-position: center;
-//  &:hover {
-//    background-image: url("/src/image/cart/status=hover.svg");
-//  }
-//
-//  &:focus {
-//    background-image: url("/src/image/cart/status=focus.svg");
-//  }
-//
-//  &:active {
-//    background-image: url("/src/image/cart/status=active.svg");;
-//  }
-//}   отредактировать
+@mixin view-box-massage($size_w: 1.2rem, $size_h: 1.2rem) {
+  width: $size_w;
+  height: $size_h;
+  display: block;
+  color: var(--color-black);
+  &:hover {
+    color: var(--color-green-600);
+  }
+  &:focus {
+    color: var(--color-green-600);
+  }
+  &:active {
+    color: var(--color-green-800);
+    background-color: var(--color-green-100);
+  }
+}

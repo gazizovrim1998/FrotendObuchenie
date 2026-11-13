@@ -1,12 +1,20 @@
 .main {
 
   .hero {
-    display: flex;
-    justify-content: space-between;
-
-    &--text {
+    &__container {
+      display: flex;;
+      justify-content: space-around;
+      gap: 30px;
+      height: 620px;
+    }
+    &__bird {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    &__text {
       margin-top: 145px;
-
 
       h1 {
         width: 500px;
@@ -28,6 +36,24 @@
 
       button {
         @include button-primary;
+      }
+    }
+
+    @media (max-width: 1200px) {
+
+      &__container {
+        height: 380px;
+      }
+      &__text {
+        margin-top: 35px;
+        width: 330px;
+        h1 {
+          width: 330px;
+          font-size: 40px;
+          span {
+            font-size: 40px;
+          }
+        }
       }
     }
   }
@@ -65,7 +91,7 @@
     &__francia, &__germany, &__avstria {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      justify-items: stretch;
+      justify-items: center;
       gap: 30px
     }
     &__painting {
@@ -73,8 +99,8 @@
       background-color: var(--color-green-100);
     }
     &__image {
-        width: 310px;
-        height: 422px;
+      width: 310px;
+      height: 422px;
     }
 
     &__author {
@@ -101,22 +127,29 @@
     &__button {
       @include button-primary
     }
+
+    @media (max-width: 1200px) {
+      &__francia, &__germany, &__avstria {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
 
   .collections {
     margin-top: 70px;
-    position: relative;
 
-    img {
-      width: 100%;
-      z-index: -1;
+    &__container {
+      background-image: url('../image/promo/pic_background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
+
     &__description {
-      z-index: 0;
-      position: absolute;
       color: var(--color-green-50);
-      inset: 70px auto auto 165px;
-      width: 540px;
+      padding-left: 165px;
+      padding-block: 70px;
+      width: 760px;
     }
     &__promo {
       display: flex;
@@ -131,48 +164,82 @@
       }
     }
     &__text {
+      width: 100%;
       margin-block: 20px 60px;
       font-size: 18px;
       line-height: 150%;
       color: var(--color-white);
+
     }
     button {
       @include promo-button;
     }
+    @media (max-width: 1200px) {
+      &__container {
+        background-image: url('../image/promo/pic_background_1200.jpg');
+      }
+      &__description {
+        padding-inline: 39px;
+        width: 100%;
+      }
+      &__promo {
+        margin-right: 277px;
+        h2 {
+          width: 370px;
+          font-size: 30px;
+        }
+      }
+    }
   }
 
   .coworker {
-    padding-top: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    &__container {
+      padding-block: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
     &__description {
       width: 445px;
       height: 440px;
     }
     &__we {
       margin-top: 124px;
-      h2 {
-        margin: 0;
       }
-      p {
-        margin-block: 20px 20px;
-        font-size: 18px;
-        line-height: 150%;
-      }
+    &__title {
+      margin: 0
+    }
+    &__text {
+      margin-block: 20px 20px;
+      font-size: 18px;
+      line-height: 150%;
     }
     &__image {
+      display: flex;
+      gap: 20px;
     }
-
+    @media (max-width: 1200px) {
+      &__container {
+        display: block;
+        width: 690px;
+      }
+      &__we {
+        margin-top: 40px;
+      }
+      &__title {
+        font-size: 30px;
+      }
+      &__text {
+        font-size: 18px;
+        margin-block: 30px;
+      }
+    }
   }
-
-
-
-
-
 
   .display-none {
     display: none;
   }
 }
+
+
