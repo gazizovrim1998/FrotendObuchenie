@@ -56,8 +56,25 @@
         }
       }
     }
+    @media (max-width: 768px) {
+      &__container {
+        margin-top: 50px;
+        gap: 0;
+        justify-content: center;
+      }
+      &__text {
+        margin-top: 35px;
+        width: 330px;
+        h1 {
+          width: 285px;
+          font-size: 36px;
+          span {
+            font-size: 36px;
+          }
+        }
+      }
+    }
   }
-
   .reproduce {
     margin-top: 70px;
 
@@ -94,49 +111,25 @@
       justify-items: center;
       gap: 30px
     }
-    &__painting {
-      width: 330px;
-      padding: 20px;
-      background-color: var(--color-green-100);
-    }
-    &__image {
-      width: 100%;
-      height: 422px;
-    }
-
-    &__author {
-      color: var(--color-green-400);
-      font-size: 18px;
-    }
-
-    &__name {
-      font-size: 30px;
-      margin-top: 10px;
-    }
-
-    &__material {
-      margin-top: 8px;
-      font-size: 18px;
-    }
-
-    &__prices {
-      font-size: 24px;
-      margin-block: 30px 20px;
-      color: var(--color-green-600);
-    }
-
-    &__button {
-      @include button-primary;
-      width: 100%;
-    }
+    @include gallery__1440-510;
 
     @media (max-width: 1200px) {
       &__francia, &__germany, &__avstria {
         grid-template-columns: 1fr 1fr;
       }
     }
+    @media (max-width: 768px) {
+      &__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      &__title {
+        font-size: 24px;
+      }
+    }
+    @include gallery__510;
   }
-
   .collections {
     margin-top: 70px;
 
@@ -192,8 +185,29 @@
         }
       }
     }
-  }
+    @media (max-width: 768px) {
+      &__container {
+        background-image: url('../image/promo/pic_background_768.jpg');
+      }
+      &__description {
+        padding-inline: 33px;
+        width: 100%;
+        padding-block: 50px;
+      }
+      &__promo {
+        width: 100%;
 
+        h2 {
+          width: 260px;
+          font-size: 24px;
+        }
+      }
+      &__text {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
   .coworker {
     &__container {
       padding-block: 70px;
@@ -235,6 +249,22 @@
       &__text {
         font-size: 18px;
         margin-block: 30px;
+      }
+    }
+    @media (max-width: 768px) {
+      &__container {
+        padding-block: 50px;
+        width: 100%;
+      }
+      &__we {
+        margin-top: 30px;
+      }
+      &__title {
+        font-size: 24px;
+      }
+      &__text {
+        font-size: 16px;
+        margin-block: 20px;
       }
     }
   }
